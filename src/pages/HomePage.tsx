@@ -46,7 +46,7 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden bg-slate-900">
         <ResponsiveImage
           base="/images/hero/home"
-          alt="Martinez Brothers stucco crew on scaffolding applying stucco to a two-story home"
+          alt="Pueblo Revival style stucco home with brick coping and white portal columns below the Sandia Mountains"
           width={1400}
           height={788}
           priority

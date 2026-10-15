@@ -13,7 +13,7 @@ export default function ServicesPage() {
         eyebrow="What We Do"
         title="Stucco Services in Albuquerque, NM"
         description="Eight specialties, one family crew. Whether you're building new, fixing cracks before monsoon season or refreshing a faded exterior, we handle the full wall system from lath to finish."
-        image={{ base: '/images/hero/home', alt: 'Martinez Brothers stucco crew on scaffolding at a two-story home', width: 1400, height: 788 }}
+        image={{ base: '/images/hero/services', alt: 'Martinez Brothers stucco crew on scaffolding at a two-story home', width: 1400, height: 788 }}
         breadcrumbs={[{ name: 'Services' }]}
       />
       <section aria-label="All stucco services" className="section bg-sand-50">
