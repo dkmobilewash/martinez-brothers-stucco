@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: update the domain if the final domain differs from martinezbrosstucco.com
+Sitemap: https://martinezbrosstucco.com/sitemap.xml
