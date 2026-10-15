@@ -387,7 +387,7 @@ export const locations: Location[] = [
     geo: { latitude: 35.135, longitude: -106.53 },
     image: '/images/locations/northeast-heights',
     imageAlt:
-      'Mid-century ranch home with stucco exterior in Albuquerque\'s Northeast Heights near the Sandia foothills',
+      'Pueblo Revival style stucco home with brick coping and white portal columns below the Sandia Mountains',
     heroHeadline: 'Stucco Repair & Recoating in the Northeast Heights',
     heroDescription:
       'From 1950s ranch homes to custom foothill houses, we repair, recoat and re-stucco homes across Albuquerque\'s Northeast Heights. Reach out to schedule a free estimate.',
