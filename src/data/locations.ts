@@ -224,7 +224,7 @@ export const locations: Location[] = [
     ],
   },
   {
-    slug: 'las-lunas',
+    slug: 'los-lunas',
     name: 'Los Lunas',
     county: 'Valencia County',
     neighborhoods: [
@@ -237,7 +237,7 @@ export const locations: Location[] = [
       'Tomé Hill (nearby)',
     ],
     geo: { latitude: 34.8062, longitude: -106.7334 },
-    image: '/images/locations/las-lunas',
+    image: '/images/locations/los-lunas',
     imageAlt:
       'Newer single-story stucco home in a Los Lunas, New Mexico subdivision with desert landscaping',
     heroHeadline: 'Stucco Contractor in Los Lunas, NM',

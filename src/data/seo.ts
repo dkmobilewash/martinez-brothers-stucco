@@ -106,7 +106,7 @@ export const seo: Record<string, SeoEntry> = {
     description:
       'Stucco and adobe-friendly plaster repair in Corrales, NM. Careful work on historic homes, horse properties and Pueblo-style houses.',
   },
-  '/las-lunas': {
+  '/los-lunas': {
     title: 'Stucco Contractor Los Lunas, NM | Martinez Brothers',
     description:
       'Stucco repair, installation and recoats in Los Lunas and Valencia County. New construction, settlement cracks and color updates.',

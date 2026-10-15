@@ -69,5 +69,5 @@ Search the code for `TODO` to find each of these:
 - [ ] Real testimonials (`testimonials.ts`) and projects (`projects.ts`)
 - [ ] The owners' real story on the About page (`AboutPage.tsx`)
 - [ ] Review pricing ranges in `services.ts` / blog posts against actual quotes
-- [ ] The Los Lunas page uses the slug `/las-lunas` as specified; consider `/los-lunas` plus a 301 redirect
+- [x] Los Lunas page lives at `/los-lunas`; `/las-lunas` 301-redirects to it (`vercel.json`)
 - [ ] Add Google Analytics / Search Console when ready

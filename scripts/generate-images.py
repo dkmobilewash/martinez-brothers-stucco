@@ -26,7 +26,7 @@ SERVICES = [
     "stucco-remodeling", "stucco-repairs", "eifs-synthetic-stucco", "stucco-painting",
 ]
 LOCATIONS = [
-    "albuquerque", "rio-rancho", "corrales", "las-lunas",
+    "albuquerque", "rio-rancho", "corrales", "los-lunas",
     "los-ranchos-de-albuquerque", "northeast-heights",
 ]
 
