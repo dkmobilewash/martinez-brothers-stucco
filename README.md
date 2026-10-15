@@ -42,7 +42,7 @@ rewrite, so unknown URLs get `dist/404.html` with a real 404 status.
 | `src/data/seo.ts` | Title + description for every non-blog route |
 | `src/data/faqs.ts` | Homepage FAQs |
 | `src/data/testimonials.ts` | Reviews (empty until real ones are collected) |
-| `src/data/projects.ts` | Project gallery (placeholders) |
+| `src/data/projects.ts` | Project gallery |
 
 Blog `content` is a `string[]`: `## Heading` → `<h2>`, anything else → `<p>`.
 A `## Question?` heading plus the following paragraph becomes FAQPage schema.
@@ -64,8 +64,8 @@ Search the code for `TODO` to find each of these:
 - [ ] NM contractor license number (`contact.ts`) — shown in the footer once set
 - [ ] Google Business Profile + review link (`contact.ts`)
 - [ ] Supabase + Zapier env vars (above)
-- [ ] Real photos: everything uses real photos (`photos/`, mapped in `scripts/generate-images.py`) except the Los Lunas and Los Ranchos location images and the projects gallery
-- [ ] Real testimonials (`testimonials.ts`) and projects (`projects.ts`)
+- [x] Real photos: every image slot now uses an owner photo (`photos/`, mapped in `scripts/generate-images.py`)
+- [ ] Real testimonials (`testimonials.ts`); add towns to the gallery projects (`projects.ts`)
 - [ ] The owners' real story on the About page (`AboutPage.tsx`)
 - [ ] Review pricing ranges in `services.ts` / blog posts against actual quotes
 - [x] Los Lunas page lives at `/los-lunas`; `/las-lunas` 301-redirects to it (`vercel.json`)

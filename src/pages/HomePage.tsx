@@ -183,7 +183,7 @@ export default function HomePage() {
                 />
                 <div className="p-5">
                   <h3 className="text-lg font-bold">{p.title}</h3>
-                  <p className="text-sm text-slate-500">{p.location}</p>
+                  {p.location && <p className="text-sm text-slate-500">{p.location}</p>}
                 </div>
               </article>
             ))}

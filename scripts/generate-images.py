@@ -6,7 +6,7 @@ Real job photos live in photos/ and are mapped to image slots in PHOTOS
 below (cropped to the slot's aspect ratio, never upscaled). Any slot without
 a real photo gets a procedurally generated stucco-texture placeholder.
 TODO: add more owner photos to photos/ and map them in PHOTOS to replace the
-remaining placeholders (locations, blog, projects and some services).
+remaining placeholders.
 
 Run: python3 scripts/generate-images.py [--force-placeholders]
 """
@@ -54,6 +54,11 @@ PHOTOS = {
     "locations/albuquerque": ("pueblo-modern-home-garage.jpg", 0.5),
     "locations/corrales": ("pueblo-home-portal-lilac.jpg", 0.45),
     "locations/rio-rancho": ("multifamily-stucco-exterior.webp", 0.3),
+    "locations/los-ranchos-de-albuquerque": ("los-ranchos-territorial-home.webp", 0.5),
+    "locations/los-lunas": ("los-lunas-two-story-home.webp", 0.5),
+    "projects/patch-texture-match": ("patch-texture-match-before-after.webp", 0.5),
+    "projects/modern-smooth-white-stucco": ("modern-smooth-white-stucco.webp", 0.4),
+    "projects/eifs-two-story-home": ("eifs-foam-board-two-story.webp", 0.5),
     "locations/northeast-heights": ("pueblo-home-sandia-mountains.jpg", 0.5),
     "blog/high-desert-climate-stucco-albuquerque": ("commercial-finish-coat-reveals.webp", 0.5),
     "blog/stucco-repair-cost-albuquerque": ("commercial-wall-patch-repair.webp", 0.45),
@@ -221,8 +226,9 @@ def main() -> None:
     blog_src = (ROOT / "src" / "data" / "blog.ts").read_text()
     for i, s in enumerate(re.findall(r"^\s*slug: '([^']+)'", blog_src, re.M)):
         responsive(f"blog/{s}", 50 + i, 2 / 3)
-    for i in range(1, 7):
-        responsive(f"projects/placeholder-{i}", 70 + i, 3 / 4)
+    for name in PHOTOS:
+        if name.startswith("projects/"):
+            responsive(name, 0, 3 / 4)
     print("done")
 
 

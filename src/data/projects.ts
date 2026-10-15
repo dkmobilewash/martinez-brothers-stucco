@@ -1,17 +1,18 @@
 /**
  * Project gallery.
  *
- * TODO: Replace placeholder entries with real project photos from the owner.
- * Put optimized WebP files in public/images/projects/ as
- * {name}-640.webp, {name}-1024.webp, {name}-1400.webp (4:3 ratio) and update
- * `image`, `title`, `location` and `description`. Set `placeholder: false`
- * on real projects.
+ * To add a project: put the original photo in photos/, map it in
+ * scripts/generate-images.py as "projects/{id}" (4:3 crop), run
+ * `npm run images`, then add an entry below.
  */
 export interface Project {
   id: string;
   title: string;
-  /** Service area name, e.g. "Rio Rancho" */
-  location: string;
+  /**
+   * Service area name, e.g. "Rio Rancho".
+   * TODO: add the town for each project once the owner confirms it. Do not guess.
+   */
+  location?: string;
   /** Service slug for linking */
   service: string;
   description: string;
@@ -23,63 +24,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'placeholder-1',
-    title: 'Full Stucco Recoat',
-    location: 'Northeast Heights',
-    service: 'stucco-remodeling',
-    description: 'Project photos coming soon. This slot will show a recoat on an established Heights home.',
-    image: '/images/projects/placeholder-1',
-    imageAlt: 'Placeholder image for an upcoming stucco recoat project photo',
-    placeholder: true,
-  },
-  {
-    id: 'placeholder-2',
-    title: 'Parapet & Canale Repair',
-    location: 'Albuquerque',
+    id: 'patch-texture-match',
+    title: 'Stucco Patch & Texture Match',
     service: 'stucco-repairs',
-    description: 'Project photos coming soon. This slot will show parapet cap and canale-area stucco repair.',
-    image: '/images/projects/placeholder-2',
-    imageAlt: 'Placeholder image for an upcoming parapet stucco repair project photo',
-    placeholder: true,
+    description:
+      'A large section of wall was rebuilt in base coat, then finished to match the existing texture and color so the repair disappears into the rest of the house.',
+    image: '/images/projects/patch-texture-match',
+    imageAlt:
+      'Before and after of a stucco wall repair: a gray base-coat patch, then the same wall finished to match the surrounding tan texture',
+    placeholder: false,
   },
   {
-    id: 'placeholder-3',
-    title: 'New Construction Stucco',
-    location: 'Rio Rancho',
-    service: 'stucco-installation',
-    description: 'Project photos coming soon. This slot will show lath, brown coat and finish on a new home.',
-    image: '/images/projects/placeholder-3',
-    imageAlt: 'Placeholder image for an upcoming new construction stucco project photo',
-    placeholder: true,
-  },
-  {
-    id: 'placeholder-4',
-    title: 'Adobe-Compatible Plaster',
-    location: 'Corrales',
+    id: 'modern-smooth-white-stucco',
+    title: 'Smooth Modern Stucco Finish',
     service: 'residential-stucco',
-    description: 'Project photos coming soon. This slot will show breathable plaster work on an adobe home.',
-    image: '/images/projects/placeholder-4',
-    imageAlt: 'Placeholder image for an upcoming adobe plaster project photo',
-    placeholder: true,
+    description:
+      'Clean, smooth white stucco on a modern home with crisp corners and dark trim, finished for a contemporary look.',
+    image: '/images/projects/modern-smooth-white-stucco',
+    imageAlt: 'Modern single-story home with a smooth white stucco finish, black window frames and a dark fascia',
+    placeholder: false,
   },
   {
-    id: 'placeholder-5',
-    title: 'Commercial EIFS Facade',
-    location: 'Albuquerque',
+    id: 'eifs-two-story-home',
+    title: 'EIFS Installation on a Two-Story Home',
     service: 'eifs-synthetic-stucco',
-    description: 'Project photos coming soon. This slot will show an EIFS facade on a commercial building.',
-    image: '/images/projects/placeholder-5',
-    imageAlt: 'Placeholder image for an upcoming commercial EIFS project photo',
-    placeholder: true,
-  },
-  {
-    id: 'placeholder-6',
-    title: 'Elastomeric Stucco Painting',
-    location: 'Los Lunas',
-    service: 'stucco-painting',
-    description: 'Project photos coming soon. This slot will show an elastomeric color coat on a family home.',
-    image: '/images/projects/placeholder-6',
-    imageAlt: 'Placeholder image for an upcoming stucco painting project photo',
-    placeholder: true,
+    description:
+      'Our crew adhering foam insulation board and applying base coat across a two-story home as part of a full EIFS installation.',
+    image: '/images/projects/eifs-two-story-home',
+    imageAlt: 'Crew on scaffolding installing EIFS foam board and base coat on a two-story home under construction',
+    placeholder: false,
   },
 ];

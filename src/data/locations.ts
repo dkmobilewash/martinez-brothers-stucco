@@ -239,7 +239,7 @@ export const locations: Location[] = [
     geo: { latitude: 34.8062, longitude: -106.7334 },
     image: '/images/locations/los-lunas',
     imageAlt:
-      'Newer single-story stucco home in a Los Lunas, New Mexico subdivision with desert landscaping',
+      'Two-story stucco home in a soft gray-brown finish with stone accents and a three-car garage',
     heroHeadline: 'Stucco Contractor in Los Lunas, NM',
     heroDescription:
       'Stucco repair, recoating and new stucco for homes throughout Los Lunas and Valencia County, from the river valley to the newer subdivisions on the mesa. Call to schedule a free estimate.',
@@ -312,7 +312,7 @@ export const locations: Location[] = [
     geo: { latitude: 35.162, longitude: -106.6425 },
     image: '/images/locations/los-ranchos-de-albuquerque',
     imageAlt:
-      'Territorial style estate with smooth stucco walls and mature cottonwoods in Los Ranchos de Albuquerque, New Mexico',
+      'Terracotta-colored Territorial-style stucco home with a carved wood double door, French doors and mature shade trees',
     heroHeadline: 'Stucco Contractor in Los Ranchos de Albuquerque',
     heroDescription:
       'Detailed stucco repair and refinishing for Los Ranchos estates and historic homes, matched carefully to existing textures and colors. Schedule a free estimate with our family-owned team.',

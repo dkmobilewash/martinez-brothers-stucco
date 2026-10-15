@@ -43,9 +43,11 @@ export default function ProjectsPage() {
                   />
                   <div className="p-6">
                     <h2 className="text-lg font-bold">{p.title}</h2>
-                    <p className="mt-1 flex items-center gap-1 text-sm text-slate-500">
-                      <MapPin className="h-4 w-4 text-terracotta-600" aria-hidden="true" /> {p.location}
-                    </p>
+                    {p.location && (
+                      <p className="mt-1 flex items-center gap-1 text-sm text-slate-500">
+                        <MapPin className="h-4 w-4 text-terracotta-600" aria-hidden="true" /> {p.location}
+                      </p>
+                    )}
                     <p className="mt-3 text-slate-600">{p.description}</p>
                     {service && (
                       <Link to={`/${service.slug}`} className="mt-4 inline-block text-sm font-semibold text-terracotta-700">
