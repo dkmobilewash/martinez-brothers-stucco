@@ -49,7 +49,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title={`About ${BUSINESS_NAME}`}
         description="A family-owned stucco and lath contractor serving Albuquerque and the surrounding communities with honest estimates and careful, climate-smart work."
-        image={{ base: '/images/hero/about', alt: 'Hand-troweled stucco finish', width: 1400, height: 788 }}
+        image={{ base: '/images/hero/about', alt: 'Martinez Brothers crew member troweling a finish coat from scaffolding', width: 1400, height: 788 }}
         breadcrumbs={[{ name: 'About' }]}
       />
 

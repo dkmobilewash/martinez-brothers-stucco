@@ -2,15 +2,17 @@
 Generates brand assets and PLACEHOLDER photos into public/images.
 
 Brand assets come from brand/logo-source.png (the owner's logo).
-The "photos" are procedurally generated stucco-texture placeholders because
-real project photography has not been supplied yet.
-TODO: replace placeholders in public/images/{hero,services,locations,blog}
-with real, optimized photos (keep the same file names and widths).
+Real job photos live in photos/ and are mapped to image slots in PHOTOS
+below (cropped to the slot's aspect ratio, never upscaled). Any slot without
+a real photo gets a procedurally generated stucco-texture placeholder.
+TODO: add more owner photos to photos/ and map them in PHOTOS to replace the
+remaining placeholders (locations, blog, projects and some services).
 
-Run: python3 scripts/generate-images.py
+Run: python3 scripts/generate-images.py [--force-placeholders]
 """
 import math
 import random
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageChops
@@ -35,6 +37,17 @@ PALETTE = [
     (214, 184, 150), (196, 154, 112), (226, 204, 176), (184, 140, 104),
     (205, 170, 132), (232, 216, 192), (176, 128, 92), (219, 192, 160),
 ]
+
+
+# slot base path -> (source file in photos/, vertical crop focus 0=top .. 1=bottom)
+PHOTOS = {
+    "hero/home": ("crew-scaffold-two-story-home.webp", 0.45),
+    "hero/about": ("storefront-finish-coat.webp", 0.35),
+    "services/stucco-installation": ("crew-scaffold-two-story-home.webp", 0.5),
+    "services/residential-stucco": ("brown-coat-new-home.png", 0.35),
+    "services/commercial-stucco": ("commercial-finish-coat-reveals.webp", 0.5),
+    "services/eifs-synthetic-stucco": ("eifs-crew-air-barrier.webp", 0.4),
+}
 
 
 def trim_white(img: Image.Image) -> Image.Image:
@@ -141,7 +154,36 @@ def stucco_texture(w: int, h: int, seed: int) -> Image.Image:
     return Image.composite(img, dark, vig)
 
 
+def crop_to_ratio(img: Image.Image, ratio: float, focus_y: float) -> Image.Image:
+    """Crop to width/height = 1/ratio, keeping the vertical focus point."""
+    w, h = img.size
+    target_h = round(w * ratio)
+    if target_h <= h:
+        top = round((h - target_h) * focus_y)
+        return img.crop((0, top, w, top + target_h))
+    target_w = round(h / ratio)
+    left = (w - target_w) // 2
+    return img.crop((left, 0, left + target_w, h))
+
+
+def photo_responsive(name: str, src: str, focus_y: float, ratio: float) -> None:
+    img = Image.open(ROOT / "photos" / src).convert("RGB")
+    img = crop_to_ratio(img, ratio, focus_y)
+    for w in WIDTHS:
+        # Never upscale: the largest variants may be narrower than their nominal width.
+        tw = min(w, img.width)
+        out = img if tw == img.width else img.resize((tw, round(tw * img.height / img.width)), Image.LANCZOS)
+        out.save(OUT / f"{name}-{w}.webp", "WEBP", quality=80, method=6)
+    print("photo", name, "<-", src, img.size)
+
+
 def responsive(name: str, seed: int, ratio: float = 9 / 16) -> None:
+    if name in PHOTOS:
+        photo_responsive(name, PHOTOS[name][0], PHOTOS[name][1], ratio)
+        return
+    # Placeholders use unseeded noise, so keep existing files stable unless forced.
+    if "--force-placeholders" not in sys.argv and all((OUT / f"{name}-{w}.webp").exists() for w in WIDTHS):
+        return
     master = stucco_texture(1400, round(1400 * ratio), seed)
     for w in WIDTHS:
         h = round(w * ratio)

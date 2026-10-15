@@ -16,7 +16,7 @@ export default function ServiceAreasPage() {
         eyebrow="Where We Work"
         title="Stucco Service Areas Around Albuquerque"
         description="From the cottonwoods of the North Valley to the mesas of Rio Rancho and the Sandia foothills, we bring the same careful stucco work to every corner of the metro."
-        image={{ base: '/images/hero/about', alt: 'Stucco home in the Albuquerque metro area', width: 1400, height: 788 }}
+        image={{ base: '/images/hero/about', alt: 'Martinez Brothers crew applying a stucco finish coat on a commercial storefront', width: 1400, height: 788 }}
         breadcrumbs={[{ name: 'Service Areas' }]}
       />
       <section aria-label="Service areas" className="section bg-sand-50">

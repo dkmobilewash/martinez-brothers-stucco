@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         eyebrow="Our Work"
         title="Stucco Projects in Albuquerque"
         description="A look at stucco installation, repair, recoat and EIFS work from around the metro."
-        image={{ base: '/images/hero/about', alt: 'Finished stucco wall', width: 1400, height: 788 }}
+        image={{ base: '/images/hero/about', alt: 'Stucco finish coat going on a commercial storefront', width: 1400, height: 788 }}
         breadcrumbs={[{ name: 'Projects' }]}
       />
       <section aria-label="Project gallery" className="section bg-sand-50">

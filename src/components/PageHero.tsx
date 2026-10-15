@@ -25,10 +25,10 @@ export default function PageHero({ title, description, eyebrow, image, breadcrum
           width={image.width}
           height={image.height}
           priority
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-90"
         />
       )}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/30" aria-hidden="true" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/85 via-slate-900/60 to-slate-900/20" aria-hidden="true" />
       <div className="container-site py-16 sm:py-20 lg:py-24">
         {breadcrumbs && <Breadcrumbs items={breadcrumbs} light />}
         <div className="mt-6 max-w-3xl">

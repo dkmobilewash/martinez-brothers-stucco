@@ -12,7 +12,7 @@ export const services: Service[] = [
       'New stucco for custom homes, additions and new builds across Albuquerque – traditional 3-coat cement stucco or 1-coat systems, cured right for the high desert.',
     image: '/images/services/stucco-installation',
     imageAlt:
-      'Crew applying a brown coat of cement stucco over wire lath on a new frame home in Albuquerque with the Sandia Mountains in the background',
+      'Martinez Brothers crew on scaffolding applying stucco to a two-story home with arched entries',
     heroHeadline: 'Stucco Installation in Albuquerque, NM',
     heroDescription:
       'From lath to finish coat, we install new stucco systems built for 5,000-plus feet of elevation, intense UV and big day-to-night temperature swings. New construction, additions, garages and casitas across the metro.',
@@ -368,7 +368,7 @@ export const services: Service[] = [
       'Stucco for Albuquerque homes of every style – Pueblo Revival, Territorial, Santa Fe, mid-century ranch and modern builds – plus garden walls and casitas.',
     image: '/images/services/residential-stucco',
     imageAlt:
-      'Pueblo Revival style home in Albuquerque with fresh tan stucco, rounded parapets, wooden vigas and canales',
+      'Stucco crew applying a brown coat around masked windows on a new tile-roof home',
     heroHeadline: 'Residential Stucco Contractor in Albuquerque, NM',
     heroDescription:
       'Family-owned stucco work for Albuquerque homeowners – exteriors, additions, courtyard walls and casitas finished to match the character of your neighborhood.',
@@ -539,7 +539,7 @@ export const services: Service[] = [
       'Stucco for retail centers, office buildings, plazas and multi-family properties across the Albuquerque metro – new work, repairs and refinishing.',
     image: '/images/services/commercial-stucco',
     imageAlt:
-      'Commercial retail plaza in Albuquerque with newly finished sand-colored stucco storefronts and parapets',
+      'Commercial building with a fresh cream stucco finish and horizontal reveals below a teal air barrier',
     heroHeadline: 'Commercial Stucco Contractor in Albuquerque, NM',
     heroDescription:
       'Stucco installation, repair and refinishing for property managers, owners and general contractors – scheduled around tenants and built to commercial standards.',
@@ -1060,7 +1060,7 @@ export const services: Service[] = [
       'Installation and repair of EIFS (synthetic stucco) – insulated foam-backed exterior systems with acrylic finishes for homes and commercial buildings.',
     image: '/images/services/eifs-synthetic-stucco',
     imageAlt:
-      'EIFS synthetic stucco installation showing foam insulation board, reinforcing mesh and acrylic finish coat on an Albuquerque building',
+      'Crew on scaffolding working on an EIFS wall over a teal air barrier with orange-taped joints below',
     heroHeadline: 'EIFS & Synthetic Stucco in Albuquerque, NM',
     heroDescription:
       'Exterior Insulation and Finish Systems installed with drainage in mind, plus repairs to damaged foam, mesh and finish coats on homes and commercial buildings across the metro.',

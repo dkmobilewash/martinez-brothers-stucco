@@ -46,13 +46,13 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden bg-slate-900">
         <ResponsiveImage
           base="/images/hero/home"
-          alt="Smooth earth-tone stucco wall on a Pueblo-style home in Albuquerque under a clear New Mexico sky"
+          alt="Martinez Brothers stucco crew on scaffolding applying stucco to a two-story home"
           width={1400}
           height={788}
           priority
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/85 via-slate-900/55 to-slate-900/10" aria-hidden="true" />
         <div className="container-site grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-[1.2fr_1fr] lg:py-24">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-sand-300">
@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <ResponsiveImage
               base="/images/hero/about"
-              alt="Hand-troweled stucco finish on an Albuquerque home"
+              alt="Stucco crew applying a finish coat to a commercial storefront from scaffolding"
               width={1400}
               height={788}
               sizes="(min-width: 1024px) 50vw, 100vw"
