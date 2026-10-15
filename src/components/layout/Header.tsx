@@ -4,6 +4,7 @@ import { ChevronDown, Clock, Menu, Phone, X } from 'lucide-react';
 import { BUSINESS_NAME, contact } from '../../data/contact';
 import { services, getServiceDisplayName } from '../../data/services';
 import { locations } from '../../data/locations';
+import { assetUrl } from '../../lib/assetUrl';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `rounded-md px-3 py-2 text-[15px] font-medium transition-colors ${
@@ -68,8 +69,8 @@ export default function Header() {
       <div className="container-site flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link to="/" className="flex shrink-0 items-center" aria-label={`${BUSINESS_NAME} home`}>
           <img
-            src="/images/logo-320.webp"
-            srcSet="/images/logo-320.webp 320w, /images/logo-640.webp 640w"
+            src={assetUrl('/images/logo-320.webp')}
+            srcSet={`${assetUrl('/images/logo-320.webp')} 320w, ${assetUrl('/images/logo-640.webp')} 640w`}
             sizes="(min-width: 1024px) 200px, 160px"
             alt={BUSINESS_NAME}
             width={320}

@@ -3,6 +3,7 @@ import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import { BUSINESS_NAME, TAGLINE, contact } from '../../data/contact';
 import { services, getServiceDisplayName } from '../../data/services';
 import { locations } from '../../data/locations';
+import { assetUrl } from '../../lib/assetUrl';
 
 const companyLinks = [
   { name: 'About Us', path: '/about' },
@@ -21,7 +22,7 @@ export default function Footer() {
         <section aria-labelledby="footer-company">
           <Link to="/" className="inline-block rounded-lg bg-white p-2">
             <img
-              src="/images/logo-320.webp"
+              src={assetUrl('/images/logo-320.webp')}
               alt={BUSINESS_NAME}
               width={320}
               height={105}

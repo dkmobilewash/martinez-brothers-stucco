@@ -1,3 +1,6 @@
+import { createHash } from 'node:crypto';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { join, relative, sep } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { buildSiteJsonLd } from './src/lib/schema';
@@ -20,7 +23,28 @@ function siteJsonLd(): Plugin {
   };
 }
 
+/** Content hash for every file in public/images, keyed by its URL path. */
+function imageVersions(): Record<string, string> {
+  const root = join(__dirname, 'public');
+  const out: Record<string, string> = {};
+  const walk = (dir: string) => {
+    for (const name of readdirSync(dir)) {
+      const full = join(dir, name);
+      if (statSync(full).isDirectory()) walk(full);
+      else {
+        const url = '/' + relative(root, full).split(sep).join('/');
+        out[url] = createHash('sha1').update(readFileSync(full)).digest('hex').slice(0, 8);
+      }
+    }
+  };
+  walk(join(root, 'images'));
+  return out;
+}
+
 export default defineConfig({
+  define: {
+    __IMAGE_VERSIONS__: JSON.stringify(imageVersions()),
+  },
   plugins: [react(), siteJsonLd()],
   build: {
     target: 'es2020',

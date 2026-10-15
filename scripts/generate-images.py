@@ -41,7 +41,8 @@ PALETTE = [
 
 # slot base path -> (source file in photos/, vertical crop focus 0=top .. 1=bottom)
 PHOTOS = {
-    "hero/home": ("crew-scaffold-two-story-home.webp", 0.45),
+    "hero/home": ("pueblo-home-sandia-mountains.jpg", 0.5),
+    "hero/services": ("crew-scaffold-two-story-home.webp", 0.45),
     "hero/about": ("storefront-finish-coat.webp", 0.35),
     "services/stucco-installation": ("two-story-wrb-scaffolding.webp", 0.45),
     "services/residential-stucco": ("spanish-courtyard-white-stucco.webp", 0.3),
@@ -217,6 +218,7 @@ def main() -> None:
         (OUT / sub).mkdir(exist_ok=True)
     brand_assets()
     responsive("hero/home", 1, 9 / 16)
+    responsive("hero/services", 2, 9 / 16)
     responsive("hero/about", 5, 9 / 16)
     for i, s in enumerate(SERVICES):
         responsive(f"services/{s}", 10 + i, 2 / 3)

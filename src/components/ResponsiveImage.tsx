@@ -1,3 +1,5 @@
+import { assetUrl } from '../lib/assetUrl';
+
 const WIDTHS = [640, 1024, 1400] as const;
 
 interface ResponsiveImageProps {
@@ -22,10 +24,10 @@ export default function ResponsiveImage({
   className,
   priority = false,
 }: ResponsiveImageProps) {
-  const srcSet = WIDTHS.map((w) => `${base}-${w}.webp ${w}w`).join(', ');
+  const srcSet = WIDTHS.map((w) => `${assetUrl(`${base}-${w}.webp`)} ${w}w`).join(', ');
   return (
     <img
-      src={`${base}-1024.webp`}
+      src={assetUrl(`${base}-1024.webp`)}
       srcSet={srcSet}
       sizes={sizes}
       alt={alt}
