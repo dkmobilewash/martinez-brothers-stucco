@@ -18,7 +18,7 @@ export const locations: Location[] = [
     geo: { latitude: 35.0844, longitude: -106.6504 },
     image: '/images/locations/albuquerque',
     imageAlt:
-      'Pueblo Revival style stucco home in Albuquerque, New Mexico with the Sandia Mountains in the background',
+      'Contemporary Pueblo-style home with smooth brown stucco, stepped parapet wall and two garage doors',
     heroHeadline: 'Stucco Contractor in Albuquerque, NM',
     heroDescription:
       'Martinez Brothers Pro-Finish Stucco handles stucco repair, recoating and new installation across Albuquerque, from historic adobe near Old Town to newer frame homes on the Westside. Call (505) 948-4197 to schedule a free estimate.',
@@ -92,7 +92,7 @@ export const locations: Location[] = [
     geo: { latitude: 35.2328, longitude: -106.663 },
     image: '/images/locations/rio-rancho',
     imageAlt:
-      'Row of tan frame-and-stucco homes in a Rio Rancho, New Mexico subdivision under a clear blue sky',
+      'Multi-story apartment building with stucco in cream, gray and tan color bands',
     heroHeadline: 'Stucco Contractor in Rio Rancho, NM',
     heroDescription:
       'Crack repair, color recoats and full re-stucco for Rio Rancho homes, including HOA communities like Cabezon, Mariposa and Enchanted Hills. We will schedule a free estimate at your home.',
@@ -165,7 +165,7 @@ export const locations: Location[] = [
     geo: { latitude: 35.2378, longitude: -106.6067 },
     image: '/images/locations/corrales',
     imageAlt:
-      'Earth-toned adobe-style home with a coyote fence and cottonwood trees in the village of Corrales, New Mexico',
+      'Pueblo-style stucco home with a covered portal, wood beams and a blooming lilac in a gravel yard',
     heroHeadline: 'Stucco & Plaster Contractor in Corrales, NM',
     heroDescription:
       'Careful stucco and plaster repair for Corrales adobe, Territorial and Pueblo-style homes, with an eye on moisture from the bosque and irrigation ditches. Schedule a free estimate with our family-owned crew.',

@@ -710,7 +710,7 @@ export const services: Service[] = [
       'Give your home a new look – restucco over siding or old finishes, change textures, add Southwestern details, or update a dated exterior.',
     image: '/images/services/stucco-remodeling',
     imageAlt:
-      'Before-and-after style view of an Albuquerque ranch home updated from dated siding to a smooth modern stucco exterior',
+      'Stucco crew on scaffolding troweling a smooth white finish coat over an existing home exterior',
     heroHeadline: 'Stucco Remodeling in Albuquerque, NM',
     heroDescription:
       'Update a tired exterior with new texture, new color or new architectural details. From mid-century Heights ranches to 1990s tract homes, we help Albuquerque homes look current again.',
