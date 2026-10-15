@@ -9,3 +9,6 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+/** public/images path → short content hash, injected by vite.config.ts */
+declare const __IMAGE_VERSIONS__: Record<string, string> | undefined;
