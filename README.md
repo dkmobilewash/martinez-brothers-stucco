@@ -64,7 +64,7 @@ Search the code for `TODO` to find each of these:
 - [ ] NM contractor license number (`contact.ts`) — shown in the footer once set
 - [ ] Google Business Profile + review link (`contact.ts`)
 - [ ] Supabase + Zapier env vars (above)
-- [ ] Real photos: home/about heroes and the installation, residential, commercial and EIFS service images use real job photos (`photos/`, mapped in `scripts/generate-images.py`). Still placeholders: replacement, remodeling, repairs and painting services, all location pages, blog posts and projects
+- [ ] Real photos: heroes, 7 of 8 service images and all blog images use real job photos (`photos/`, mapped in `scripts/generate-images.py`). Still placeholders: Stucco Remodeling, all location pages and the projects gallery
 - [ ] Real testimonials (`testimonials.ts`) and projects (`projects.ts`)
 - [ ] The owners' real story on the About page (`AboutPage.tsx`)
 - [ ] Review pricing ranges in `services.ts` / blog posts against actual quotes

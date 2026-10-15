@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 min read',
     image: '/images/blog/high-desert-climate-stucco-albuquerque',
     imageAlt:
-      'Tan stucco wall of an Albuquerque home in strong afternoon sun with the Sandia Mountains in the background',
+      'Fresh cream stucco finish with reveal lines on a building under a bright, clear sky',
     relatedService: 'stucco-repairs',
     content: [
       "Stucco has been the default exterior finish in Albuquerque for generations, and for good reason. It is fire resistant, it suits the Pueblo Revival and Territorial styles that define the city, and it handles dry weather far better than wood siding. But stucco is not indestructible. The high desert puts a specific set of stresses on exterior walls, and understanding them makes it much easier to spot problems early and keep repair bills small.",
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     image: '/images/blog/stucco-repair-cost-albuquerque',
     imageAlt:
-      'Close-up of a freshly patched section of tan stucco on an Albuquerque home with tools and a hawk nearby',
+      'Stucco repair in progress on a commercial wall, with patched areas visible from the scaffolding',
     relatedService: 'stucco-repairs',
     content: [
       "One of the first questions homeowners ask when they spot a crack or a stain on their stucco is how much it is going to cost. The honest answer is that it depends on what is causing the problem, how large the damaged area is, and how hard it is to reach. That said, most Albuquerque stucco repairs fall into a few predictable categories, and knowing the typical ranges helps you budget and evaluate the estimates you receive.",
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 min read',
     image: '/images/blog/adobe-vs-stucco-albuquerque',
     imageAlt:
-      'Pueblo Revival style Albuquerque home with rounded earth-toned walls, vigas and a wooden entry door',
+      'Pueblo-style wall with projecting wood vigas receiving a new stucco base coat',
     relatedService: 'residential-stucco',
     content: [
       "Drive through almost any Albuquerque neighborhood and you will see rounded parapets, earth toned walls, vigas and portals. Many people assume these homes are built from adobe. Some are, especially in the North Valley, the South Valley, Corrales and around Old Town. But the majority of homes built in the metro over the last several decades are wood frame or concrete block with a stucco finish designed to look like adobe. Knowing which one you live in is important, because the two behave very differently and need different care.",
@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 min read',
     image: '/images/blog/stucco-repair-before-monsoon-season',
     imageAlt:
-      'Dark monsoon storm clouds gathering over a stucco home with a flat roof and canales in Albuquerque',
+      'Stucco crew member troweling a finish coat on a storefront from scaffolding',
     relatedService: 'stucco-repairs',
     content: [
       "For most of the year, rain is not something Albuquerque homeowners think much about. Then monsoon season arrives, usually in early July and running through September, and the afternoon storms that roll off the mountains can deliver heavy rain, strong gusts and hail in a matter of minutes. Stucco that has quietly cracked and weathered through the dry months suddenly has to stand up to wind-driven water. Early summer is the ideal window to walk around your home, look for the warning signs below, and get repairs done while the weather is still dry and predictable.",
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     image: '/images/blog/eifs-vs-stucco-new-mexico',
     imageAlt:
-      'Cross-section showing foam insulation board, mesh and finish coat of an EIFS wall next to traditional three-coat stucco',
+      'Crew on scaffolding working on an EIFS wall over a teal air barrier',
     relatedService: 'eifs-synthetic-stucco',
     content: [
       "If you are building, remodeling or re-siding a home or commercial building in Albuquerque, you will probably be asked whether you want traditional stucco or EIFS. From across the street they can look almost the same, with similar textures and the same palette of earth tones. Underneath, though, they are very different systems, and each has strengths and weaknesses in New Mexico's high desert climate.",
@@ -208,7 +208,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     image: '/images/blog/stucco-installation-cost-albuquerque',
     imageAlt:
-      'Crew applying a brown coat of stucco over metal lath on a new home under construction in Albuquerque',
+      'Stucco crew on scaffolding applying stucco to a two-story home',
     relatedService: 'stucco-installation',
     content: [
       "Whether you are building a new home, adding a casita, enclosing a portal or re-siding an older house, stucco is one of the most practical exterior finishes for Albuquerque. It is durable, fire resistant and well suited to the high desert. It is also a significant investment, so it pays to understand what goes into the price before you start collecting bids.",
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     image: '/images/blog/stucco-over-adobe-albuquerque',
     imageAlt:
-      'Section of an old adobe wall with exposed mud bricks where cement stucco has been removed during an Albuquerque remodel',
+      'Brown coat of stucco being applied around masked windows on a home',
     relatedService: 'stucco-remodeling',
     content: [
       "Adobe homes are part of what makes Albuquerque, Corrales, Los Ranchos and the valley neighborhoods so distinctive. If you own one, you may be thinking about a new exterior finish, either because the current coating is cracking and stained or because you are remodeling and want a fresh look. A common question is whether you can simply apply cement stucco over the adobe. The short answer is that you technically can, but it is often not the best choice, and doing it without the right evaluation and detailing can cause serious damage.",
@@ -282,7 +282,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 min read',
     image: '/images/blog/stucco-colors-albuquerque-homes',
     imageAlt:
-      'Row of Albuquerque homes with stucco in sand, tan and adobe brown tones under a bright blue sky',
+      'Stucco tower partway through a color change, with the new lighter coat over the old tan',
     relatedService: 'stucco-painting',
     content: [
       "Color is one of the most visible decisions you will make about your home's exterior, and in Albuquerque it carries extra weight. The city's architecture, from Pueblo Revival to Territorial to modern desert contemporary, has a strong visual identity, and the intense high desert light changes how colors look throughout the day. A shade that looks perfect on a small chip indoors can read very differently on a sunlit wall. Here is how to choose a stucco color that fits your home, holds up to the climate, and meets any local requirements.",

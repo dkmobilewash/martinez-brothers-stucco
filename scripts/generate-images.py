@@ -47,6 +47,17 @@ PHOTOS = {
     "services/residential-stucco": ("brown-coat-new-home.png", 0.35),
     "services/commercial-stucco": ("commercial-finish-coat-reveals.webp", 0.5),
     "services/eifs-synthetic-stucco": ("eifs-crew-air-barrier.webp", 0.4),
+    "services/stucco-repairs": ("commercial-wall-patch-repair.webp", 0.4),
+    "services/stucco-painting": ("tower-recoat-color-change.webp", 0.3),
+    "services/stucco-replacement": ("pueblo-vigas-brown-coat.webp", 0.3),
+    "blog/high-desert-climate-stucco-albuquerque": ("commercial-finish-coat-reveals.webp", 0.5),
+    "blog/stucco-repair-cost-albuquerque": ("commercial-wall-patch-repair.webp", 0.45),
+    "blog/adobe-vs-stucco-albuquerque": ("pueblo-vigas-brown-coat.webp", 0.25),
+    "blog/stucco-repair-before-monsoon-season": ("storefront-finish-coat.webp", 0.35),
+    "blog/eifs-vs-stucco-new-mexico": ("eifs-crew-air-barrier.webp", 0.5),
+    "blog/stucco-installation-cost-albuquerque": ("crew-scaffold-two-story-home.webp", 0.5),
+    "blog/stucco-over-adobe-albuquerque": ("brown-coat-new-home.png", 0.4),
+    "blog/stucco-colors-albuquerque-homes": ("tower-recoat-color-change.webp", 0.45),
 }
 
 

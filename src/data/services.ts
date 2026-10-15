@@ -183,7 +183,7 @@ export const services: Service[] = [
       'Full tear-off and replacement when old stucco is failing – new barrier, new lath and a new finish that stands up to monsoon rain and freeze-thaw.',
     image: '/images/services/stucco-replacement',
     imageAlt:
-      'Old cracked stucco being removed down to the framing on an Albuquerque home, exposing sheathing ready for new weather barrier and lath',
+      'Worker on scaffolding applying new stucco base coat to a Pueblo-style wall with wood vigas',
     heroHeadline: 'Stucco Replacement in Albuquerque, NM',
     heroDescription:
       'When patching no longer keeps water out, we tear off the old system and rebuild the wall properly. Ideal for older homes in the Heights, Four Hills and the Valley with hidden moisture damage.',
@@ -881,7 +881,7 @@ export const services: Service[] = [
       'Crack repair, patching, impact damage, parapet and canale repairs – fixed and blended to match your existing texture and color.',
     image: '/images/services/stucco-repairs',
     imageAlt:
-      'Stucco repair in progress on an Albuquerque home, with a cracked section cut out and patched around a window corner',
+      'Worker on scaffolding patching a commercial stucco wall with visible repair areas above storefront windows',
     heroHeadline: 'Stucco Repair in Albuquerque, NM',
     heroDescription:
       'Cracks, holes, water damage and crumbling parapets repaired the right way – with patches that blend into your existing finish. Serving Albuquerque, Rio Rancho and surrounding communities.',
@@ -1240,7 +1240,7 @@ export const services: Service[] = [
       'Elastomeric and acrylic coatings that restore faded stucco, bridge hairline cracks and stand up to New Mexico sun.',
     image: '/images/services/stucco-painting',
     imageAlt:
-      'Painter spraying an elastomeric coating in a warm adobe tan color on a stucco wall in Albuquerque',
+      'Painter recoating a stucco tower over an arched entry door, with the new color coat half applied',
     heroHeadline: 'Stucco Painting in Albuquerque, NM',
     heroDescription:
       'Restore sun-faded stucco with coatings made for high-desert UV. We repair cracks first, then apply elastomeric or acrylic finishes in the earth tones Albuquerque homes are known for.',
